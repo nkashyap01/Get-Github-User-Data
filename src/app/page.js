@@ -3,6 +3,7 @@ const home = () => {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <User name="neha" />
+      <User name="neha" />
       <h1> Hello Next </h1>
     </main>
   );
