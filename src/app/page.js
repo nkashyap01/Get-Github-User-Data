@@ -1,23 +1,16 @@
 "use client";
+import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
-const home = () => {
+
+const Home = () => {
   const [value, setValue] = useState(false);
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <User name="neha" />
-      <User name="neha" />
-      <h1> Hello Next </h1>
+    <main className="flex min-h-screen flex-col items-center p-24">
+      <h1> welcome to Next JS </h1>
+      <Link href="/products"> Navigate to product page </Link>
     </main>
   );
 };
 
-const User = ({ name }) => {
-  return (
-    <div>
-      <h1> Hello {name} </h1>
-    </div>
-  );
-};
-
-export default home;
+export default Home;
